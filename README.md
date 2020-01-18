@@ -6,3 +6,4 @@ Download the ***Sudoko_solver.jar*** found in the ***dist*** folder, then open a
 java -jar "Sudoko_solver.jar"
 ```
 ## Example
+![](Sudoku_solver_run.gif)
