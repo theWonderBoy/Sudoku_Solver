@@ -2021,6 +2021,8 @@ public class Sudoko extends javax.swing.JFrame {
             @Override
             public void run() {
                 int[] x_y = utility.find_next_empty(board);
+                // disable the button while the alogrthim is running
+                jButton1.setEnabled(false);
                 try {
                     back_track_solution(board, x_y[0], x_y[1]);
                 } catch (InterruptedException ex) {
@@ -2032,6 +2034,8 @@ public class Sudoko extends javax.swing.JFrame {
 
         });
         t.start();
+        // re-enable the button after the alogrthim finish running
+        jButton1.setEnabled(true);
         return true;
     }
 
