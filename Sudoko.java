@@ -2030,12 +2030,13 @@ public class Sudoko extends javax.swing.JFrame {
                 } catch (InvocationTargetException ex) {
                     Logger.getLogger(Sudoko.class.getName()).log(Level.SEVERE, null, ex);
                 }
+                jButton1.setEnabled(true);
             }
 
         });
         t.start();
         // re-enable the button after the alogrthim finish running
-        jButton1.setEnabled(true);
+        
         return true;
     }
 
@@ -2072,7 +2073,7 @@ public class Sudoko extends javax.swing.JFrame {
 
                 board[x][y] = i;
                 change(x, y, i);
-                Thread.sleep(100);
+                Thread.sleep(200);
                 x_y = utility.find_next_empty(board);
 
                 if (x_y[0] == -1 && x_y[1] == -1) {
