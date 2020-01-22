@@ -292,6 +292,7 @@ public class Sudoko extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Sudoku");
         setBackground(new java.awt.Color(0, 7, 255));
         setForeground(java.awt.Color.darkGray);
 
